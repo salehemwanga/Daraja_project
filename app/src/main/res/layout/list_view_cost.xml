@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:id="@+id/scrollojt"
-    android:fillViewport="true" >
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:showDividers="end">
+    android:showDividers="middle|beginning|end"
+    android:background="#009688">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollojt"
+        android:fillViewport="true"
+        android:background="#009688">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:weightSum="1"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="5dp"
+        android:layout_height="match_parent"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:background="#eeecec"
+        android:background="#00897B"
         android:showDividers="end"
-        android:layout_marginTop="5dp">
+        android:padding="10dp">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -36,7 +35,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Motocycle"
                 android:id="@+id/tvVehicleType"
-                android:textColor="#000000" />
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
 
@@ -52,7 +51,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Peak"
                 android:id="@+id/tvStatusCost"
-                android:textColor="#000000" />
+                android:textColor="#FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,9 +66,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="100"
                 android:id="@+id/tvCost"
-                android:textColor="#000000" />
+                android:textColor="#FFFFFF" />
         </LinearLayout>
 
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>
-</ScrollView>
