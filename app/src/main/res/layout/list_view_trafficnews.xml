@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tbTitle"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageTraffic"
+                        android:background="@drawable/roadwork"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="50dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="("
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/textView13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Small Text"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/tvUpdatedtime" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text=")"
+                        android:id="@+id/textView16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Description"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/tvDesc"
+                        android:paddingBottom="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="none"
+                        android:maxLines="100"
+                        android:scrollHorizontally="false"
+                        android:textSize="14dp"
+                        android:textColor="#090808" />
+                </TableRow>
+            </TableLayout>
+            <!--<View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="#000" />-->
+
+    </LinearLayout>
+</ScrollView>

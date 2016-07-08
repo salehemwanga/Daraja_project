@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.salehe.kigambonibridge.TrafficNews"
+    android:background="@drawable/bridgeimage">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="This page shows the list of incidents that occur on the Bridge"
+                android:id="@+id/textView17"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="#082ff2"
+                android:background="#eae6e6"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Symbol description"
+                android:id="@+id/textView7"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:layout_marginBottom="2dp"
+                android:background="#eae6e6" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_rounded_corner"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="1dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:background="@drawable/trafficicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Heavy traffic"
+                        android:id="@+id/textView11"
+                        android:textSize="14dp"
+                        android:paddingRight="2dp"
+                        android:layout_marginRight="50dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="#43b107" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:background="@drawable/roadwork" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Major Road Work"
+                        android:id="@+id/textView12"
+                        android:textSize="14dp"
+                        android:paddingRight="2dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="#43b107" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:layout_margin="1dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:background="@drawable/accident" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Road Accident"
+                        android:id="@+id/textView14"
+                        android:textSize="14dp"
+                        android:paddingRight="2dp"
+                        android:layout_marginRight="40dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="#43b107" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:background="@drawable/breakdown" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Vehicle Breakdown"
+                        android:id="@+id/textView15"
+                        android:textSize="14dp"
+                        android:paddingRight="2dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="#43b107" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_margin="1dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView7"
+                        android:background="@drawable/lane" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Faulty Lane"
+                        android:id="@+id/textView18"
+                        android:textSize="14dp"
+                        android:paddingRight="2dp"
+                        android:layout_marginRight="60dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="#43b107" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView9"
+                        android:background="@drawable/other" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Other Incidents"
+                        android:id="@+id/textView19"
+                        android:textSize="14dp"
+                        android:paddingRight="2dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="#43b107" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/topLayout"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="#eae6e6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Type"
+                    android:id="@+id/textView3"
+                    android:textSize="16dp"
+                    android:textColor="#d72f2f"
+                    android:paddingRight="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Description"
+                    android:id="@+id/textView4"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:textColor="#d72f2f" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/topLayout"
+                    android:id="@+id/listViewTraffic"
+                    android:layout_marginLeft="10dp"
+                    android:background="#eae6e6"
+                    android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_home" tools:context=".Home"
+    android:background="@drawable/bridgeimage">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="1dp">
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="27 Jun 2016 09:00 AM"
+                android:id="@+id/textView"
+                android:textColor="#0e0d0d" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Bridge Situation"
+                android:id="@+id/btnSituation"
+                android:layout_margin="10dp"
+                android:background="@drawable/change_button_0n_pressed"
+                android:textColor="#000000"
+                android:textAllCaps="false"
+                android:drawableBottom="#ff0c"
+                android:drawableTop="@drawable/bridge"
+                android:clickable="true" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Traffic News"
+                android:id="@+id/btnNews"
+                android:layout_margin="10dp"
+                android:background="@drawable/change_button_0n_pressed"
+                android:textColor="#000000"
+                android:textAllCaps="false"
+                android:drawableTop="@drawable/traffic"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Package Payment"
+                android:id="@+id/btnPayment"
+                android:background="@drawable/change_button_0n_pressed"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textAllCaps="false"
+                android:drawableTop="@drawable/money"
+                android:clickable="true" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Others"
+                android:id="@+id/btnOthers"
+                android:background="@drawable/change_button_0n_pressed"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"
+                android:drawableTop="@drawable/others"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvHome"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

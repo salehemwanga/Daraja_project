@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kigamboni Bridge</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_package_payment">PackagePayment</string>
+    <string name="action_notification">Enable Notification</string>
+    <string name="title_activity_notification">Notification</string>
+</resources>
