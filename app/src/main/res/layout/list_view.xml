@@ -31,6 +31,25 @@
             android:gravity="center"
             android:padding="5dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="08/07/2016 08:00 Updated"
+            android:id="@+id/textView42"
+            android:textColor="#e1dede"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Current situation at Kigamboni Bridge"
+            android:id="@+id/textView40"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ffffff" />
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -112,6 +131,25 @@
             android:padding="5dp"
             android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Cost depends on the above current situation "
+            android:id="@+id/textView44"
+            android:textColor="#e1dede"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="cost is for case bases, Note for packages"
+            android:id="@+id/textView45"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ffffff" />
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -181,7 +219,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Cost(Tsh)"
+                            android:text="Cost"
                             android:id="@+id/textView9"
                             android:paddingLeft="20dp"
                             android:textSize="16dp"
@@ -193,6 +231,7 @@
 
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>
