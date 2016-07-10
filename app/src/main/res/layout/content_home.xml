@@ -117,10 +117,17 @@
         android:layout_width="match_parent"
         android:id="@+id/home"
         android:layout_alignParentTop="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:background="@drawable/layout_gradient"
         android:layout_height="150dp" >
-
-        <TextView
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/logo2"/>
+      <!--  <TextView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -133,7 +140,7 @@
             android:textStyle="bold|italic"
             android:textSize="35dp"
             android:fontFamily="sans-serif-thin"
-            android:typeface="serif" />
+            android:typeface="serif" />-->
     </LinearLayout>
 
 </RelativeLayout>
