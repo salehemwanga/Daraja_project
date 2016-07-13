@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RadioButton;
@@ -62,8 +63,8 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
 //        Toast.makeText(getApplicationContext(),Config.STATUS_ID,Toast.LENGTH_SHORT).show();
 
         tvHome = (TextView) findViewById(R.id.tvHome);
-        Button btnsituation = (Button) findViewById(R.id.btnSituation);
-        Button btnnews = (Button) findViewById(R.id.btnNews);
+        LinearLayout btnsituation = (LinearLayout) findViewById(R.id.btnSituation);
+        LinearLayout btnnews = (LinearLayout) findViewById(R.id.btnNews);
         Button btnpayment = (Button) findViewById(R.id.btnPayment);
         btnsituation.setOnClickListener(this);
         btnnews.setOnClickListener(this);

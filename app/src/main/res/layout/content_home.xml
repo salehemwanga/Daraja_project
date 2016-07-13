@@ -9,7 +9,7 @@
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_home" tools:context=".Home"
-    android:background="@drawable/bridgeimage">
+    android:background="@drawable/layout_gradient">
 
     <LinearLayout
         android:orientation="vertical"
@@ -41,7 +41,7 @@
             android:weightSum="1"
             android:gravity="center">
 
-            <Button
+           <!-- <Button
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:text="Bridge Situation"
@@ -54,8 +54,8 @@
                 android:drawableTop="@drawable/bridge"
                 android:clickable="true"
                 android:typeface="serif" />
-
-            <Button
+-->
+         <!--   <Button
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:text="Traffic News"
@@ -66,7 +66,49 @@
                 android:textAllCaps="false"
                 android:drawableTop="@drawable/traffic"
                 android:clickable="true"
-                android:typeface="serif" />
+                android:typeface="serif" />-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:id="@+id/btnSituation"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:background="@drawable/bridge"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Bridge Situation"
+                    android:id="@+id/textView48" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:id="@+id/btnNews"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:background="@drawable/traffic"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Traffic News"
+                    android:id="@+id/textView49" />
+            </LinearLayout>
 
         </LinearLayout>
 
