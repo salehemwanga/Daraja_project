@@ -59,8 +59,7 @@
         android:layout_below="@id/layout1"
         android:id="@+id/maincontent"
         android:layout_height="match_parent"
-        android:padding="5dp"
-        android:layout_above="@+id/copyright">
+        android:padding="5dp">
 
 
         <LinearLayout
@@ -442,29 +441,5 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="7dp"
-        android:id="@+id/copyright"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/layout_gradient"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="2dp">
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Copyright @2016 Kigamboni Bridge"
-            android:id="@+id/textView47"
-            android:gravity="center"
-            android:paddingTop="10dp"
-            android:paddingBottom="5dp"
-            android:textSize="14dp"
-            android:textStyle="italic"
-            android:textColor="#000" />
-    </LinearLayout>
-
+    <include layout="@layout/footer" />
 </RelativeLayout>
